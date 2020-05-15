@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="outer">
+        <div class="menu">
+            <div class="grid-container">
+                <div><a href="/citations#index">All</a></div>
+                <div><a href="/citations#new">Best</a></div>
+                <div><a href="/citations/new">Add</a></div>
+                <div><a href="#del">Login</a></div>
+            </div>
+        </div>
+        <%= yield %>
+    </div>
   </body>
 </html>

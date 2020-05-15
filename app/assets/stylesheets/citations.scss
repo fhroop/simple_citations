@@ -1,0 +1,174 @@
+
+@font-face {
+    font-family: 'Vulf';
+    src: url('vulf.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VulfBold';
+    src: url('vulf_bold.woff') format('woff');
+    font-style: normal;
+}
+
+body {
+    background-color: #e3e3e3;
+    color: #0e0e0e;
+}
+
+div {
+    font: 12.0px 'Vulf';
+}
+
+table {
+    position: relative;
+    width: 100%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+  background-color: #333;
+  padding: 0px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  color: #f95959;
+  padding: 0px;
+}
+
+.cit-menu-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 0px;
+  padding-bottom: 3px;
+  padding-top: 50px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style:dashed;
+}
+
+.grid-container > div {
+  text-align: center;
+  font: 12.0px 'VulfBold';
+  color:#e3e3e3;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.grid-container a {
+    display: block;
+    color: #e3e3e3;
+    background-color: #333;
+}
+
+.grid-container a:link {
+  text-decoration: none;
+}
+
+.grid-container a:visited {
+  text-decoration: none;
+}
+
+.grid-container a:hover {
+  text-decoration: none;
+  color: #f95959;
+}
+
+.grid-container a:active {
+  text-decoration: none;
+}
+
+.cit-menu-container > div {
+    font: 12.0px 'VulfBold';
+}
+
+.grid-container2 a {
+    display: block;
+    color: #f95959;
+    font: 12.0px 'VulfBold';
+}
+
+.grid-container2 a:link {
+  text-decoration: none;
+}
+
+.grid-container2 a:visited {
+  text-decoration: none;
+}
+
+.grid-container2 a:hover {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+.grid-container a:active {
+  text-decoration: none;
+}
+
+/*
+    #233142 - darkest
+    #455d7a - dark
+    #f95959 - red
+    #e3e3e3 - light
+*/
+
+.outer {
+    width: 100%;
+}
+
+.inner {
+    position: relative;
+    width:50%;
+    margin: 10px auto;
+}
+
+.inner_pad {
+    margin: auto 20px;
+    text-align: center;
+    color: #f95959;
+}
+
+.menu {
+    position: relative;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    margin-bottom:10px;
+
+}
+
+.added {
+    font: 12.0px 'VulfBold';
+    color: #0e0e0e;
+    text-align: left;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.link a {
+    color: #f95959;
+}
+
+.link a:link {
+  text-decoration: none;
+}
+
+.link a:visited {
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: none;
+  color: #0e0e0e;
+}
