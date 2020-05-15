@@ -1,0 +1,21 @@
+
+
+  <% @citations.each do |citation| %>
+      <div class="inner">
+          <div class="cit-menu-container">
+              <% t = citation.created_at %>
+              <div class="link">
+                  <%= link_to citation.id, citation_path(citation)  %>,
+                  <%= citation.user %>,
+                  <%= t.strftime("%m/%d/%Y at %I:%M %p") %>
+              </div>
+              <div class="grid-container2">
+                 <div><%= link_to "Edit", edit_citation_path(citation) %></div>
+                 <div><%= link_to "Delete", citation_path(citation), method: 'delete', data: { confirm: 'Delete?' } %></div>
+              </div>
+          </div>
+      </div>
+      <div class="inner">
+          <%= format_linebreaks(citation.content) %>
+      </div>
+    <% end %>

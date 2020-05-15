@@ -1,0 +1,8 @@
+
+<div class="inner">
+    <%= form_for @citation do |f| %>
+      <p>Edit User: <%= f.text_field :user, placeholder: @citation.user %></p>
+      <p>Edit Text: <%= f.text_area :content, placeholder: @citation.content %></p>
+      <%= f.submit %>
+    <% end %>
+</div>
